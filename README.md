@@ -1,4 +1,19 @@
-# AWS-Automated-Class-Attendance
-Make use of AWS to automate the attendance process for classes by having students scan into the room with their student ID cards.
+# Automating the attendance process with AWS
 
-[`HardwareReqs.xlsx`](HardwareReqs.xlsx) is a spreadsheet of what we need to buy for the project.
+Allow students to scan their ID cards upon entering a room for class, displaying their name on a web page for the teacher to mark them present.
+
+## Current Working Diagram
+
+Most current diagram of what our AWS environment will look like:
+
+![Current project diagram](Capstone_Diagram.png)
+
+## Shopping List
+
+List of things we need to buy for the project:
+
+| Item | Cost |
+|-|-|
+|HiLetgo RFID Reader | $10.49 |
+|Raspberry Pi Zero W (TBD)| $20.80 |
+|Running total | **$31.29** |
