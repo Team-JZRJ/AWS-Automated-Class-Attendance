@@ -22,12 +22,12 @@ List of things we need to buy for the project:
 
 What's next on the docket?
 
-1. Get card reader ordered
-2. Experiment with card reader, determine it's output
-3. Research Raspberry Pi, determine what will work best for our needs
-4. Order Pi, configure networking and OS
-5. Connect card reader to Pi, configure Pi to send values to AWS
-6. Build data pipeline in AWS, query against student DB?
-7. Build web application to read from data pipeline
-8. Design and 3D print housing for Pi/reader
-9. Present?
+- [ ] Get card reader ordered
+- [ ] Experiment with card reader, determine it's output
+- [ ] Research Raspberry Pi, determine what will work best for our needs
+- [ ] Order Pi, configure networking and OS
+- [ ] Connect card reader to Pi, configure Pi to send values to AWS
+- [ ] Build data pipeline in AWS, query against student DB?
+- [ ] Build web application to read from data pipeline
+- [ ] Design and 3D print housing for Pi/reader
+- [ ] Present?
