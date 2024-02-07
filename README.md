@@ -34,7 +34,7 @@ See [`HardwareReqs.xlsx`](HardwareReqs.xlsx) for downloadable spreadsheet.
 
 What's next on the docket?
 
-- [x] Get card reader ordered (P.O. approved, en route)
+- [x] Get card reader ordered (P.O. approved, ordered.)
 - [ ] Experiment with card reader, determine it's output
 - [ ] Research Raspberry Pi, determine what will work best for our needs
 - [ ] Order Pi, configure networking and OS
