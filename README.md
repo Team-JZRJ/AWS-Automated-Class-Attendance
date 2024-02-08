@@ -24,8 +24,9 @@ List of things we need to buy for the project:
 
 | Item | Cost |
 |-|-|
-|[Raspberry Pi Zero W (TBD)](https://www.amazon.com/Raspberry-Pi-Zero-Wireless-model/dp/B06XFZC3BX/ref=asc_df_B06XFZC3BX/?tag=hyprod-20&linkCode=df0&hvadid=312363697617&hvpos=&hvnetw=g&hvrand=12255993669550297530&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9019669&hvtargid=pla-405706373744&psc=1&mcid=7c324a0a86243324915c51bfb077f963&tag=&ref=&adgrpid=61916342293&hvpone=&hvptwo=&hvadid=312363697617&hvpos=&hvnetw=g&hvrand=12255993669550297530&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9019669&hvtargid=pla-405706373744&gclid=Cj0KCQiAqsitBhDlARIsAGMR1Rh3R2iQx6Wp9i3mGJZ7Fr_0tgGDG1drqlVJABb0oX2EUVb8bdxf-iMaAvdREALw_wcB)| $20.80 |
-|Running total | **$20.80** |
+|[Raspberry Pi Zero W](https://www.amazon.com/Raspberry-Pi-Zero-Wireless-model/dp/B06XFZC3BX/ref=asc_df_B06XFZC3BX/?tag=hyprod-20&linkCode=df0&hvadid=312363697617&hvpos=&hvnetw=g&hvrand=12255993669550297530&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9019669&hvtargid=pla-405706373744&psc=1&mcid=7c324a0a86243324915c51bfb077f963&tag=&ref=&adgrpid=61916342293&hvpone=&hvptwo=&hvadid=312363697617&hvpos=&hvnetw=g&hvrand=12255993669550297530&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9019669&hvtargid=pla-405706373744&gclid=Cj0KCQiAqsitBhDlARIsAGMR1Rh3R2iQx6Wp9i3mGJZ7Fr_0tgGDG1drqlVJABb0oX2EUVb8bdxf-iMaAvdREALw_wcB)| $20.80 |
+|[SanDisk 32GB Micro SD Card](https://www.amazon.com/SanDisk-Ultra-SDSQUNB-032G-GN3MN-UHS-I-microSDHC/dp/B010NE3QHQ/ref=sr_1_21?crid=2G088BBQ62KN5&keywords=microSD+card&qid=1707407180&s=electronics&sprefix=microsd+card%2Celectronics%2C200&sr=1-21) | $7.89 |
+|Running total | **$28.69** |
 
 ## To-Do List
 
@@ -33,10 +34,11 @@ What's next on the docket?
 
 - [x] Get card reader ordered (P.O. approved, ordered. Tracking #?)
 - [ ] Experiment with card reader, determine it's output
-- [ ] Research Raspberry Pi, determine what will work best for our needs
+- [x] Research Raspberry Pi
 - [ ] Order Pi, configure networking and OS
 - [ ] Connect card reader to Pi, configure Pi to send values to AWS
-- [ ] Build data pipeline in AWS, query against student DB?
+- [ ] Build data pipeline in AWS
+- [ ] Build DB(s)?
 - [ ] Build web application to read from data pipeline
 - [ ] Design and 3D print housing for Pi/reader
-- [ ] Present?
+- [ ] Present
