@@ -28,11 +28,11 @@ List of things we need to buy for the project:
 |Running total | **$20.80** |
 
 
-## To-do List
+## To-Do List
 
 What's next on the docket?
 
-- [x] Get card reader ordered (P.O. approved, ordered.)
+- [x] Get card reader ordered (P.O. approved, ordered. Tracking #?)
 - [ ] Experiment with card reader, determine it's output
 - [ ] Research Raspberry Pi, determine what will work best for our needs
 - [ ] Order Pi, configure networking and OS
