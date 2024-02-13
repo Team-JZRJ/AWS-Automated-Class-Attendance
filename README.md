@@ -36,7 +36,8 @@ What can I be doing right now?
 - [x] Get card reader ordered (P.O. approved, ordered. Tracking #?)
 - [ ] Experiment with card reader, determine it's output
 - [x] Research Raspberry Pi
-- [ ] Order Pi, configure networking and OS
+- [x] Order Raspberry Pi
+- [ ] Configure OS and network on Pi
 - [ ] Connect card reader to Pi, configure Pi to send values to AWS
 - [ ] Build data pipeline in AWS
 - [ ] Set up Cognito user pool?
