@@ -1,11 +1,7 @@
 # Attendance, simplified.
-
-## Mission
-
-Automate the attendance taking process by allowing students to scan their student ID card upon entering a classroom, sending their name to a web application that shows the teacher a simple list of everyone who's scanned in.
+We seek to automate the attendance taking process by allowing students to scan their student ID card upon entering a classroom, sending their name to a web application that shows the teacher a simple list of everyone who's scanned in.
 
 ## Who Are We?
-
  ***Team JZRJ*** (catchy, right?)
  - Jacob Plaziak - *jmplaziak*
  - Zach Redland - *zachary-redland*
@@ -13,13 +9,11 @@ Automate the attendance taking process by allowing students to scan their studen
  - Jake Hochstatter - *FlyxHub*
 
 ## Project Blueprint
-
 Most current diagram of what our solution will look like:
 
 ![Current project diagram](Capstone_Diagram.png)
 
 ## Shopping List
-
 List of things we need to buy for the project:
 
 | Item | Cost |
@@ -28,9 +22,16 @@ List of things we need to buy for the project:
 |[SanDisk 32GB Micro SD Card](https://www.amazon.com/SanDisk-Ultra-SDSQUNB-032G-GN3MN-UHS-I-microSDHC/dp/B010NE3QHQ/ref=sr_1_21?crid=2G088BBQ62KN5&keywords=microSD+card&qid=1707407180&s=electronics&sprefix=microsd+card%2Celectronics%2C200&sr=1-21) | $7.89 |
 |Running total | **$28.69** |
 
-## To-Do List
+## Purchase Orders
+Things we've already ordered:
 
-What's next on the docket?
+| Item | Tracking # |
+|-|-|
+|[HiLetgo RFID Card Reader](https://www.amazon.com/HiLetgo-125Khz-EM4100-Reader-Swipe/dp/B01MZYYDUV/ref=sr_1_3?keywords=RFID+Readers&qid=1707835660&sr=8-3) | N/A |
+
+
+## To-Do List
+What can I be doing right now?
 
 - [x] Get card reader ordered (P.O. approved, ordered. Tracking #?)
 - [ ] Experiment with card reader, determine it's output
@@ -40,5 +41,6 @@ What's next on the docket?
 - [ ] Build data pipeline in AWS
 - [ ] Build DB(s)?
 - [ ] Build web application to read from data pipeline
+- [ ] Design final blueprint
 - [ ] Design and 3D print housing for Pi/reader
 - [ ] Present
