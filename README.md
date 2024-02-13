@@ -39,6 +39,7 @@ What can I be doing right now?
 - [ ] Order Pi, configure networking and OS
 - [ ] Connect card reader to Pi, configure Pi to send values to AWS
 - [ ] Build data pipeline in AWS
+- [ ] Set up Cognito user pool?
 - [ ] Build DB(s)?
 - [ ] Build web application to read from data pipeline
 - [ ] Design final blueprint
