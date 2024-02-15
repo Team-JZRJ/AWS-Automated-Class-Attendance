@@ -13,6 +13,14 @@ Most current diagram of what our solution will look like:
 
 ![Current project diagram](Capstone_Diagram.png)
 
+## Hardware checkout
+Like a library, but for hardware!
+
+|Item|Team member|
+|:-:|:-:|
+|RFID/NFC Scanners|Jake H.|
+|Raspberry Pi|Zach R.|
+
 ## Shopping List
 List of things we need to buy for the project:
 
@@ -34,7 +42,7 @@ Where's my stuff?
 What can I be doing right now?
 
 - [x] Get card reader ordered (P.O. approved, ordered. Tracking #?)
-- [ ] Experiment with card reader, determine it's output
+- [ ] Experiment with card reader, determine it's output (Please God help me - Jake)
 - [x] Research Raspberry Pi
 - [x] Order Raspberry Pi
 - [ ] Configure OS and network on Pi
