@@ -1,4 +1,4 @@
-# Attendance, simplified.
+# AttenEase PiCloud
 We seek to automate the attendance taking process by allowing students to scan their student ID card upon entering a classroom, sending their name to a web application that shows the teacher a simple list of everyone who's scanned in.
 
 ## Who Are We?
@@ -37,15 +37,19 @@ Where's my stuff?
 |1|Mystery NFC Reader|Arrived|
 |2|[Raspberry Pi Zero W](https://www.amazon.com/Raspberry-Pi-Zero-Wireless-model/dp/B06XFZC3BX/ref=asc_df_B06XFZC3BX/?tag=hyprod-20&linkCode=df0&hvadid=312363697617&hvpos=&hvnetw=g&hvrand=12255993669550297530&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9019669&hvtargid=pla-405706373744&psc=1&mcid=7c324a0a86243324915c51bfb077f963&tag=&ref=&adgrpid=61916342293&hvpone=&hvptwo=&hvadid=312363697617&hvpos=&hvnetw=g&hvrand=12255993669550297530&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9019669&hvtargid=pla-405706373744&gclid=Cj0KCQiAqsitBhDlARIsAGMR1Rh3R2iQx6Wp9i3mGJZ7Fr_0tgGDG1drqlVJABb0oX2EUVb8bdxf-iMaAvdREALw_wcB)|Arrived|
 |2|[SanDisk 32GB MicroSD Card](https://www.amazon.com/SanDisk-Ultra-SDSQUNB-032G-GN3MN-UHS-I-microSDHC/dp/B010NE3QHQ/ref=sr_1_21?crid=2G088BBQ62KN5&keywords=microSD+card&qid=1707407180&s=electronics&sprefix=microsd+card%2Celectronics%2C200&sr=1-21)|Arrived|
+|3|Cloud Resources|PO sent|
+|4|[Sony RC-S380](https://www.amazon.com/Sony-RC-S380-PaSoRi-Card-Reader/dp/B00VR1WARC)|PO sent|
 
 ## To-Do List
 What can I be doing right now?
 
-- [x] Get card reader ordered (P.O. approved, ordered. Tracking #?)
+- [x] Get card reader ordered (New Sony reader OTW; ETA: ***02/29/2024***)
 - [ ] Experiment with card reader, determine it's output (Please God help me - Jake)
+  - Determine proper write format
+  - How to send output to anywhere except NFCTools?
 - [x] Research Raspberry Pi
 - [x] Order Raspberry Pi
-- [ ] Configure OS and network on Pi
+- [x] Configure OS and network on Pi
 - [ ] Connect card reader to Pi, configure Pi to send values to AWS
 - [ ] Build data pipeline in AWS
 - [ ] Set up Cognito user pool?
