@@ -44,9 +44,9 @@ Where's my stuff?
 What can I be doing right now?
 
 - [x] Get card reader ordered
-- [ ] Experiment with card reader, determine it's output (Please God help me - Jake)
+- [ ] Experiment with card reader(s)
   - [ ] Write nfcpy script
-    - [ ] Figure out how to use that with AWS
+    - [ ] Figure out how to connect to AWS
 - [x] Research Raspberry Pi
 - [x] Order Raspberry Pi
 - [x] Configure OS and network on Pi
