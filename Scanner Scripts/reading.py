@@ -2,6 +2,7 @@ import nfc
 import sys
 import nfc.tag
 
+
 def on_connect(tag):
     print(f"Tag detected: {tag}")
     # Attempt to read NDEF data
