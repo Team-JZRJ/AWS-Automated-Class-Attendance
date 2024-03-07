@@ -5,21 +5,7 @@ import nfc.tag
 
 def on_connect(tag):
     print(f"Tag detected: {tag}")
-    # Attempt to read NDEF data
-    print(tag.ndef)
-    if tag.ndef:
-        for record in tag.ndef.records:
-            print(record.text)
-            # Check if the record is a Text Record
-            if record.type == "urn:nfc:wkt:T":
-                text = record.text
-                print(f"Text record found: {text}")
-            else:
-                print(f"Non-text record found, type: {record.type}")
-    else:
-        print("This tag is not NDEF formatted.")
-    return True
-
+    return
 
 def read_nfc():
     clf = nfc.ContactlessFrontend("usb")  # Assuming NFC reader is connected via USB
