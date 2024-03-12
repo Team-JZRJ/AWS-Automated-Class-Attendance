@@ -47,7 +47,7 @@ What can I be doing right now?
 - [x] Get card reader ordered
 - [ ] Experiment with card reader(s)
   - [X] Write nfcpy script
-    - [ ] Get script running on Pi
+    - [x] Get script running on Pi
     - [ ] Figure out how to connect to AWS
 - [x] Research Raspberry Pi
 - [x] Order Raspberry Pi
