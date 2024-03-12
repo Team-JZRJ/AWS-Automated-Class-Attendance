@@ -45,15 +45,15 @@ Where's my stuff?
 What can I be doing right now?
 
 - [x] Get card reader ordered
-- [ ] Experiment with card reader(s)
+- [x] Experiment with card reader(s)
   - [X] Write nfcpy script
     - [x] Get script running on Pi
-    - [ ] Figure out how to connect to AWS
 - [x] Research Raspberry Pi
 - [x] Order Raspberry Pi
 - [x] Configure OS and network on Pi
+- [ ] Connect Pi to AWS
+  - [ ] Make AWS pick up ID values
 - [ ] Setup IAM accounts for team members in AWS environment
-- [ ] Connect card reader to Pi, configure Pi to send values to AWS
 - [ ] Build data pipeline in AWS
 - [ ] Set up Cognito user pool?
 - [ ] Build DB(s)?
