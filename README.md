@@ -1,4 +1,4 @@
-# AttenEase PiCloud
+# AttendEase PiCloud
 We seek to automate the attendance taking process by allowing students to scan their student ID card upon entering a classroom, sending their name to a web application that shows the teacher a simple list of everyone who's scanned in.
 
 ## Who Are We?
@@ -12,14 +12,6 @@ We seek to automate the attendance taking process by allowing students to scan t
 Most current diagram of what our solution will look like:
 
 ![Current project diagram](Capstone_Diagram.png)
-
-## Hardware checkout
-Like a library, but for hardware!
-
-|Item|Team member|
-|:-:|:-:|
-|Card Readers|Jake H.|
-|Raspberry Pi|Zach R.|
 
 ## Shopping List
 List of things we need to buy for the project:
@@ -60,5 +52,6 @@ What can I be doing right now?
 - [ ] Build web application to read from data pipeline
 - [ ] Design final blueprint
 - [ ] Design and 3D print housing for Pi/reader
+- [ ] Pick a better name (maybe)
 - [ ] Present
   - [ ] Slide deck/Demo video?
