@@ -43,7 +43,7 @@ What can I be doing right now?
 - [x] Research Raspberry Pi
 - [x] Order Raspberry Pi
 - [x] Configure OS and network on Pi
-- [ ] Connect Pi to AWS
+- [x] Connect Pi to AWS
   - [ ] Make AWS pick up ID values
 - [ ] Setup IAM accounts for team members in AWS environment
 - [ ] Build data pipeline in AWS
