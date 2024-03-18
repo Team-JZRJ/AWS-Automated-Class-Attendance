@@ -7,12 +7,13 @@ def on_connect(tag):
     print(f"Tag detected: {tag}")
     return
 
+
 def read_nfc():
     clf = nfc.ContactlessFrontend("usb")  # Assuming NFC reader is connected via USB
     if clf:
         print("NFC reader detected and ready for a tag.")
         try:
-            clf.connect(rdwr={"on-connect": on_connect})
+            return clf.connect(rdwr={"on-connect": on_connect})
         finally:
             clf.close()
     else:
