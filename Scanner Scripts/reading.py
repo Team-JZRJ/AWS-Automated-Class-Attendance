@@ -5,7 +5,7 @@ import nfc.tag
 
 def on_connect(tag):
     print(f"Tag detected: {tag}")
-    return
+    return tag
 
 
 def read_nfc():

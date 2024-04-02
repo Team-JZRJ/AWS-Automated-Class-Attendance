@@ -44,8 +44,8 @@ What can I be doing right now?
 - [x] Order Raspberry Pi
 - [x] Configure OS and network on Pi
 - [x] Connect Pi to AWS
-  - [ ] Make AWS pick up ID values
-- [ ] Setup IAM accounts for team members in AWS environment
+  - [X] Make AWS pick up ID values
+- [X] Setup IAM accounts for team members in AWS environment
 - [ ] Build data pipeline in AWS
 - [ ] Set up Cognito user pool?
 - [ ] Build DB(s)?
