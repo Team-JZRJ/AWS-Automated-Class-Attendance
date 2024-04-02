@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Data from S3 Test</title>
+</head>
+<body>
+    <h1>Data from S3</h1>
+    <ul id="data-list"></ul>
+
+    <script>
+        // Function to fetch and display data
+        function fetchData() {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        var jsonData = JSON.parse(xhr.responseText);
+                        var dataList = document.getElementById('data-list');
+                        jsonData.forEach(function(item) {
+                            var li = document.createElement('li');
+                            li.textContent = item.name + ' - ' + item.value;
+                            dataList.appendChild(li);
+                        });
+                    } else {
+                        console.log('Failed to fetch data: ' + xhr.status);
+                    }
+                }
+            };
+            xhr.open('GET', 'testdata.json', true); // Replace 'testdata.json' with the path to your JSON data file
+            xhr.send();
+        }
+
+        // Call the fetchData function when the page loads
+        fetchData();
+    </script>
+</body>
+</html>
