@@ -1,37 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="light">
 <head>
     <title>Display Data from S3 Test</title>
+
+    <!--Pico CSS Framework-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
 </head>
 <body>
-    <h1>Data from S3</h1>
-    <ul id="data-list"></ul>
+    <!--Top nav bar-->
+    <nav class="container">
+        <ul>
+            <li><strong>AttendEase PiCloud</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="https://github.com/Team-JZRJ/AWS-Automated-Class-Attendance">GitHub</a></li>
+            <li>
+                <details class="dropdown">
+                    <summary>
+                        Account
+                    </summary>
+                    <ul dir="rtl">
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Logout</a></li>
+                  </ul>
+                </details>
+            </li>
+        </ul>
+    </nav>
 
-    <script>
-        // Function to fetch and display data
-        function fetchData() {
-            var xhr = new XMLHttpRequest();
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState === XMLHttpRequest.DONE) {
-                    if (xhr.status === 200) {
-                        var jsonData = JSON.parse(xhr.responseText);
-                        var dataList = document.getElementById('data-list');
-                        jsonData.forEach(function(item) {
-                            var li = document.createElement('li');
-                            li.textContent = item.name + ' - ' + item.value;
-                            dataList.appendChild(li);
-                        });
-                    } else {
-                        console.log('Failed to fetch data: ' + xhr.status);
+    <main class="container">
+        <h1>Data from S3</h1>
+        <ul id="data-list"></ul>
+
+        <!--Function to fetch and display data-->
+        <script>
+            function fetchData() {
+                var xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === XMLHttpRequest.DONE) {
+                        if (xhr.status === 200) {
+                            var jsonData = JSON.parse(xhr.responseText);
+                            var dataList = document.getElementById('data-list');
+                            jsonData.forEach(function(item) {
+                                var li = document.createElement('li');
+                                li.textContent = item.name + ' - ' + item.value;
+                                dataList.appendChild(li);
+                            });
+                        } else {
+                            console.log('Failed to fetch data: ' + xhr.status);
+                        }
                     }
-                }
-            };
-            xhr.open('GET', 'testdata.json', true); // Replace 'testdata.json' with the path to your JSON data file
-            xhr.send();
-        }
+                };
+                xhr.open('GET', 'testdata.json', true); // JSON data file path goes here
+                xhr.send();
+            }
 
-        // Call the fetchData function when the page loads
-        fetchData();
-    </script>
+            // fetchData function to load on page
+            fetchData();
+        </script>
+    </main>
 </body>
 </html>
