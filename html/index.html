@@ -39,20 +39,24 @@
         <section>
             <h1>Log In</h1>
             <br>
-            <form>
+            <form id="loginForm">
                 <fieldset class="grid">
                   <input 
-                    name="login"
-                    placeholder="Login"
-                    aria-label="Login"
+                    name="username"
+                    id="username"
+                    placeholder="Username"
+                    aria-label="Username"
                     autocomplete="username"
+                    required
                   />
                   <input
                     type="password"
+                    id="password"
                     name="password"
                     placeholder="Password"
                     aria-label="Password"
                     autocomplete="current-password"
+                    required
                   />
                   <input
                     type="submit"
@@ -60,6 +64,44 @@
                   />
                 </fieldset>
             </form>
+
+            <!--Amazon Cognito Integration-->
+            <script src="https://sdk.amazonaws.com/js/aws-sdk-2.961.0.min.js"></script>
+            <script>
+                AWS.config.region = 'us-east-1';
+                AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+                    IdentityPoolId: 'us-east-1_pXNalQNEw'
+                });
+
+                var cognitoIdentityServiceProvider = new AWS.CognitoIdentityServiceProvider();
+
+                document.getElementById('loginForm').addEventListener('submit', function(event) {
+                    event.preventDefault();
+
+                    var username = document.getElementById('username').value;
+                    var password = document.getElementById('password').value;
+
+                    var params = {
+                        AuthFlow: 'USER_PASSWORD_AUTH',
+                        ClientId: '6lna7st5e1fa1lmf5j5s7k5cmb',
+                        AuthParameters: {
+                            'USERNAME': username,
+                            'PASSWORD': password
+                        }
+                    };
+
+                    cognitoIdentityServiceProvider.initiateAuth(params, function(err, data) {
+                        if (err) {
+                            console.log('Error', err);
+                            alert('Login failed. Please check your credentials and try again.');
+                        } else {
+                            console.log('Authentication successful:', data);
+                            alert('Login successful!');
+                            window.location.href = 'data.html'; // Replace with your desired URL
+                        }
+                    });
+                });
+            </script>
         </section>
     </main>
 </body>
