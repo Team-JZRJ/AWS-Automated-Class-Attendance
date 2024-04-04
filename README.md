@@ -46,10 +46,12 @@ What can I be doing right now?
 - [x] Connect Pi to AWS
   - [X] Make AWS pick up ID values
 - [X] Setup IAM accounts for team members in AWS environment
-- [ ] Build data pipeline in AWS
-- [ ] Set up Cognito user pool?
 - [ ] Build DB(s)?
-- [ ] Build web application to read from data pipeline
+  - [ ] Set up S3 bucket
+  - [ ] Subscribe Athena to MQTT topic?
+  - [ ] Make Athena query S3 bucket
+- [ ] Build website
+  - [ ] Update website with data from S3 bucket
 - [ ] Design final blueprint
 - [ ] Design and 3D print housing for Pi/reader
 - [ ] Pick a better name (maybe)
