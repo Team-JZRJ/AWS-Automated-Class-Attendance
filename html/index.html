@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html data-theme="light">
+<head>
+    <title>Log In</title>
+
+    <!--Pico CSS Framework-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+</head>
+<body>
+    <!--Header-->
+    <header class="container">
+        <!--Top nav bar-->
+        <nav>
+            <ul>
+                <li><strong>AttendEase PiCloud</strong></li>
+            </ul>
+            <ul>
+                <li><a href="data.html">Data</a></li>
+                <li><a href="https://github.com/Team-JZRJ/AWS-Automated-Class-Attendance">GitHub</a></li>
+                <li>
+                    <details class="dropdown">
+                        <summary>
+                            Log In
+                        </summary>
+                        <ul dir="rtl">
+                            <li><a href="index.html">Log In</a></li>
+                      </ul>
+                    </details>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Main-->
+    <main class="container">
+        <!--Log in form-->
+        <section>
+            <h1>Log In</h1>
+            <br>
+            <form>
+                <fieldset class="grid">
+                  <input 
+                    name="login"
+                    placeholder="Login"
+                    aria-label="Login"
+                    autocomplete="username"
+                  />
+                  <input
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    aria-label="Password"
+                    autocomplete="current-password"
+                  />
+                  <input
+                    type="submit"
+                    value="Log in"
+                  />
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
