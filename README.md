@@ -50,7 +50,7 @@ What can I be doing right now?
   - [ ] Set up S3 bucket
   - [ ] Subscribe Athena to MQTT topic?
   - [ ] Make Athena query S3 bucket
-- [ ] Build website
+- [X] Build website
   - [ ] Update website with data from S3 bucket
 - [ ] Design final blueprint
 - [ ] Design and 3D print housing for Pi/reader
