@@ -17,7 +17,7 @@
                 <li><strong>AttendEase PiCloud</strong></li>
             </ul>
             <ul>
-                <li><a href="data.html">Data</a></li>
+                <li><a href="data.html" onclick="checkLoginStatus()">Data</a></li>
                 <li><a href="https://github.com/Team-JZRJ/AWS-Automated-Class-Attendance">GitHub</a></li>
                 <li>
                     <details class="dropdown">
@@ -68,6 +68,7 @@
             <!--Amazon Cognito Integration-->
             <script src="https://sdk.amazonaws.com/js/aws-sdk-2.961.0.min.js"></script>
             <script>
+                // setting up the connection to the user pool
                 AWS.config.region = 'us-east-1';
                 AWS.config.credentials = new AWS.CognitoIdentityCredentials({
                     IdentityPoolId: 'us-east-1_pXNalQNEw'
@@ -75,6 +76,7 @@
 
                 var cognitoIdentityServiceProvider = new AWS.CognitoIdentityServiceProvider();
 
+                // the log in form script
                 document.getElementById('loginForm').addEventListener('submit', function(event) {
                     event.preventDefault();
 
