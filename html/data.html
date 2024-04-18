@@ -71,6 +71,29 @@
                 fetchData();
             </script>
         </section>
+        <section>
+            <button id="triggerButton">Trigger Lambda Function</button>
+            <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1002.0.min.js">
+                document.getElementById('triggerButton').addEventListener('click', function() {
+                    var lambda = new AWS.Lambda();
+
+                    var params = {
+                        FunctionName: 'JRJZ_test_lambda',
+                        InvocationType: 'RequestResponse', // Synchronous invocation
+                        Payload: JSON.stringify({/* Payload data */})
+                    };
+
+                    lambda.invoke(params, function(err, data) {
+                        if (err) {
+                            console.error('Error invoking Lambda function:', err);
+                        } else {
+                            console.log('Lambda function invoked successfully:', data);
+                            // Handle the response data here
+                        }
+                    });
+                });
+            </script>
+        </section>
     </main>
 </body>
 </html>
