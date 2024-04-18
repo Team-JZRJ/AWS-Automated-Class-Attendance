@@ -46,7 +46,7 @@ What can I be doing right now?
 - [x] Connect Pi to AWS
   - [X] Make AWS pick up ID values
 - [X] Setup IAM accounts for team members in AWS environment
-- [ ] Build DB(s)?
+- [x] Build DB(s)? (Not really DB but hey it works)
   - [x] Set up S3 bucket
   - [x] Make Athena query S3 bucket
 - [X] Build website
