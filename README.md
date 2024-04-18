@@ -47,13 +47,11 @@ What can I be doing right now?
   - [X] Make AWS pick up ID values
 - [X] Setup IAM accounts for team members in AWS environment
 - [ ] Build DB(s)?
-  - [ ] Set up S3 bucket
-  - [ ] Subscribe Athena to MQTT topic?
-  - [ ] Make Athena query S3 bucket
+  - [x] Set up S3 bucket
+  - [x] Make Athena query S3 bucket
 - [X] Build website
   - [ ] Update website with data from S3 bucket
 - [ ] Design final blueprint
 - [ ] Design and 3D print housing for Pi/reader
-- [ ] Pick a better name (maybe)
 - [ ] Present
   - [ ] Slide deck/Demo video?
