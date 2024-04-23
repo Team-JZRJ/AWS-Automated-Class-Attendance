@@ -10,6 +10,7 @@
 
     <!-- To read CSV Files-->
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.2.0/papaparse.min.js"></script>
+
 </head>
 <body>
     <!--Header-->
@@ -49,7 +50,8 @@
 
             <!--Function to fetch and display data -->
             <script>
-                Papa.parse("82be6767-3783-41b0-91c6-cdc5d41113f6.csv", { 
+                // Display data to table 
+                Papa.parse("https://jrjztestbucketeast2.s3.us-east-2.amazonaws.com/athena_dump_test/9932b506-1afc-44ae-a72a-87669381630a.csv", { 
                 header: true, 
                 download: true, 
                 dynamicTyping: true, 
