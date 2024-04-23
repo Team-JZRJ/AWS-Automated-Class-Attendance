@@ -7,6 +7,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+    <!-- To read CSV Files-->
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.2.0/papaparse.min.js"></script>
 </head>
 <body>
     <!--Header-->
@@ -38,39 +41,37 @@
 
     <!--Main-->
     <main class="container">
-        <!--Display Data from S3-->
+        <!--Display data from S3-->
         <section>
             <h1>Data from S3</h1>
             <br>
-            <ul id="data-list"></ul>
+            <table id="table"></table>
 
-            <!--Function to fetch and display data-->
+            <!--Function to fetch and display data -->
             <script>
-                function fetchData() {
-                    var xhr = new XMLHttpRequest();
-                    xhr.onreadystatechange = function() {
-                        if (xhr.readyState === XMLHttpRequest.DONE) {
-                            if (xhr.status === 200) {
-                                var jsonData = JSON.parse(xhr.responseText);
-                                var dataList = document.getElementById('data-list');
-                                jsonData.forEach(function(item) {
-                                    var li = document.createElement('li');
-                                    li.textContent = item.name + ' - ' + item.value;
-                                    dataList.appendChild(li);
-                                });
-                            } else {
-                                console.log('Failed to fetch data: ' + xhr.status);
-                            }
-                        }
-                    };
-                    xhr.open('GET', 'testdata.json', true); // JSON data file path goes here
-                    xhr.send();
-                }
-
-                // fetchData function to load on page
-                fetchData();
+                Papa.parse("82be6767-3783-41b0-91c6-cdc5d41113f6.csv", { 
+                header: true, 
+                download: true, 
+                dynamicTyping: true, 
+                complete: function(results) { 
+                  var data = results.data; 
+                  var table = document.getElementById("table"); 
+                  for (var i = 0; i < data.length; i++) { 
+                    var row = data[i]; 
+                    var tr = document.createElement("tr"); 
+                    for (var key in row) { 
+                      var td = document.createElement("td"); 
+                      td.innerHTML = row[key]; 
+                      tr.appendChild(td); 
+                    } 
+                    table.appendChild(tr); 
+                  } 
+                } 
+                });
             </script>
+            
         </section>
+        <!--Button to trigger lambda function-->
         <section>
             <button id="triggerButton">Trigger Lambda Function</button>
             <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1002.0.min.js">
@@ -81,6 +82,7 @@
                         FunctionName: 'JRJZ_test_lambda',
                         InvocationType: 'RequestResponse', // Synchronous invocation
                         Payload: JSON.stringify({/* Payload data */})
+
                     };
 
                     lambda.invoke(params, function(err, data) {
