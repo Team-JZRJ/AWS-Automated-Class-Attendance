@@ -3,7 +3,6 @@ import boto3
 DATABASE = "newdatatest"
 TABLE = "test_table1"
 
-
 output = "s3://jrjztestbucketeast2/athena_dump_test/"
 
 
@@ -21,7 +20,6 @@ def lambda_handler(event, context):
     )
 
     queryID = response["QueryExecutionId"]
-
     queryLocation = f"athena_dump_test/{queryID}.csv"
 
     source_bucket_name = "jrjztestbucketeast2"
