@@ -21,7 +21,7 @@ List of things we need to buy for the project:
 |Running total | **$0.00** |
 
 ## Purchase Orders
-Where's my stuff?
+Where's our stuff?
 
 |P.O.|Item|Status|
 |-|-|-|
@@ -31,7 +31,7 @@ Where's my stuff?
 |2|[SanDisk 32GB MicroSD Card](https://www.amazon.com/SanDisk-Ultra-SDSQUNB-032G-GN3MN-UHS-I-microSDHC/dp/B010NE3QHQ/ref=sr_1_21?crid=2G088BBQ62KN5&keywords=microSD+card&qid=1707407180&s=electronics&sprefix=microsd+card%2Celectronics%2C200&sr=1-21)|Arrived|
 |3|Cloud Resources|Arrived|
 |4|[Sony RC-S380](https://www.amazon.com/Sony-RC-S380-PaSoRi-Card-Reader/dp/B00VR1WARC)|Arrived|
-|5|[USB Hub](https://www.amazon.com/Onfinio-Splitter-Individual-HighSpeed-Extension/dp/B0B7H3D2R9/ref=sr_1_4?crid=1W7FQJTAYW894&dib=eyJ2IjoiMSJ9.Ou3YKRghEbPifAlq6t2fJGLeovmJHVZPBzbHkRhnftqTNeZbrQX6cyLxP9T_cexxpiv41aMQ300v6qEum5paAuTM6J3-c8bFK1aA3gS2LL4HRWcURTT4Y0ljYZecBsx8lRWP2RHuirT3GhLDGJkaBOvQsBXSYhauIiolHiuYrRF-DSIb3jMHfIFqjtGv8KIftDymspLP-2zURr8EGGhwhJC2OiKUYSfyXHtwJItbwOY.QuoDqe_uOIsVXbSyj8hkdblUUhDE3BLIrSzJ_mfc2jI&dib_tag=se&keywords=usb+hub&qid=1710256568&sprefix=usb+hub%2Caps%2C106&sr=8-4)|PO Sent|
+|5|[USB Hub](https://www.amazon.com/Onfinio-Splitter-Individual-HighSpeed-Extension/dp/B0B7H3D2R9/ref=sr_1_4?crid=1W7FQJTAYW894&dib=eyJ2IjoiMSJ9.Ou3YKRghEbPifAlq6t2fJGLeovmJHVZPBzbHkRhnftqTNeZbrQX6cyLxP9T_cexxpiv41aMQ300v6qEum5paAuTM6J3-c8bFK1aA3gS2LL4HRWcURTT4Y0ljYZecBsx8lRWP2RHuirT3GhLDGJkaBOvQsBXSYhauIiolHiuYrRF-DSIb3jMHfIFqjtGv8KIftDymspLP-2zURr8EGGhwhJC2OiKUYSfyXHtwJItbwOY.QuoDqe_uOIsVXbSyj8hkdblUUhDE3BLIrSzJ_mfc2jI&dib_tag=se&keywords=usb+hub&qid=1710256568&sprefix=usb+hub%2Caps%2C106&sr=8-4)|Arrived|
 
 ## To-Do List
 What can I be doing right now?
