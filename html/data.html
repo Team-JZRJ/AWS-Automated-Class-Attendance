@@ -51,7 +51,7 @@
             <!--Function to fetch and display data -->
             <script>
                 // Display data to table 
-                Papa.parse("https://jrjztestbucketeast2.s3.us-east-2.amazonaws.com/athena_dump_test/9932b506-1afc-44ae-a72a-87669381630a.csv", { 
+                Papa.parse("outputTest.csv", { 
                 header: true, 
                 download: true, 
                 dynamicTyping: true, 
@@ -73,29 +73,14 @@
             </script>
             
         </section>
-        <!--Button to trigger lambda function-->
+        <!--button to refresh page-->
         <section>
-            <button id="triggerButton">Trigger Lambda Function</button>
-            <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1002.0.min.js">
+            <button id="triggerButton">Refresh</button>
+            <script>
                 document.getElementById('triggerButton').addEventListener('click', function() {
-                    var lambda = new AWS.Lambda();
-
-                    var params = {
-                        FunctionName: 'JRJZ_test_lambda',
-                        InvocationType: 'RequestResponse', // Synchronous invocation
-                        Payload: JSON.stringify({/* Payload data */})
-
-                    };
-
-                    lambda.invoke(params, function(err, data) {
-                        if (err) {
-                            console.error('Error invoking Lambda function:', err);
-                        } else {
-                            console.log('Lambda function invoked successfully:', data);
-                            // Handle the response data here
-                        }
+                    
+                    location.reload();
                     });
-                });
             </script>
         </section>
     </main>
