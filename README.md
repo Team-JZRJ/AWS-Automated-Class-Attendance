@@ -43,7 +43,7 @@ What can I be doing right now?
   - [x] Set up S3 bucket
   - [x] Make Athena query S3 bucket
 - [X] Build website
-  - [ ] Update website with data from S3 bucket
+  - [x] Update website with data from S3 bucket
 - [ ] Design final blueprint
 - [ ] Design and 3D print housing for Pi/reader
 - [ ] Present
