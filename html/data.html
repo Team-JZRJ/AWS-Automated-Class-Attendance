@@ -75,14 +75,36 @@
         </section>
         <!--button to refresh page-->
         <section>
-            <button id="triggerButton">Refresh</button>
+            <button id="refreshButton">Refresh</button>
             <script>
-                document.getElementById('triggerButton').addEventListener('click', function() {
+                document.getElementById('refreshButton').addEventListener('click', function() {
                     
                     location.reload();
                     });
             </script>
-        </section>
+            <button id="clearButton">Clear</button>
+            <script>
+                document.getElementById("refreshButton").addEventListener("click", function() {
+                    // Replace 'YOUR_LAMBDA_API_ENDPOINT' with the actual API endpoint of your Lambda function
+                    fetch('https://yquni7atnxots2buloov3vc7lu0ldyxb.lambda-url.us-east-2.on.aws/', {
+                        method: 'POST',
+                        // If your Lambda function expects data, you can include it in the body
+                        // body: JSON.stringify({key: value}),
+                    })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.json(); // assuming Lambda returns JSON
+                    })
+                    .then(data => {
+                        console.log(data); // Do something with the response data
+                    })
+                    .catch(error => {
+                        console.error('There was a problem with the fetch operation:', error);
+                    });
+                });
+            </script>
     </main>
 </body>
 </html>
