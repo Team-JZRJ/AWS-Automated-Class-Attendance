@@ -50,5 +50,7 @@ What can I be doing right now?
   - [x] Update website with data from S3 bucket
 - [x] Design final blueprint
 - [ ] Design and 3D print housing for Pi/reader
+  - [x] Design
+  - [ ] 3D print
 - [ ] Present
   - [x] Slide deck/Demo?
