@@ -8,10 +8,14 @@ We seek to automate the attendance taking process by allowing students to scan t
  - Richard Phann - *pharicDunwoody*
  - Jake Hochstatter - *FlyxHub*
 
-## Project Blueprint
-Most current diagram of what our solution will look like:
+## Project Blueprints
+Our initial architecture diagram:
 
-![Current project diagram](Capstone_Diagram.png)
+![Initial project diagram](Capstone_Diagram.png)
+
+Our final architecture diagram:
+
+![Final project diagram](Capstone_Diagram_FINAL.png)
 
 ## Inventory
 Where's our stuff?
@@ -44,7 +48,7 @@ What can I be doing right now?
   - [x] Make Athena query S3 bucket
 - [X] Build website
   - [x] Update website with data from S3 bucket
-- [ ] Design final blueprint
+- [x] Design final blueprint
 - [ ] Design and 3D print housing for Pi/reader
 - [ ] Present
-  - [ ] Slide deck/Demo video?
+  - [x] Slide deck/Demo?
