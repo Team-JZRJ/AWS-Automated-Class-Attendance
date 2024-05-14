@@ -54,3 +54,7 @@ What can I be doing right now?
   - [x] 3D print
 - [x] Present
   - [x] Slide deck/Demo?
+
+## Conclusion
+We're done!
+From all of us here at Team JZRJ, we hope you enjoyed watching us all spiral into insanity.
